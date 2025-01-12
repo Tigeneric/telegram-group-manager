@@ -85,6 +85,6 @@ class TelegramManager:
             print(f"User {user_entity.id} ({user_entity.username}) added to '{target_group.title}'.")
             await asyncio.sleep(1)  # Delay of 1 second between additions
         except UserPrivacyRestrictedError:
-            print(f"User {user_entity.id} has privacy settings that prevent adding to groups.")
+            print(f"User {user_entity.id, user_entity.username} has privacy settings that prevent adding to groups.")
         except Exception as e:
-            print(f"Error adding user {user_entity.id}: {e}")
+            print(f"Error adding user {user_entity.id, user_entity.username}: {e}")
